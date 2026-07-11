@@ -1,0 +1,10 @@
+[Interface]
+Address = {{ connection.peer_ip }}
+PrivateKey = {{ privatekey }}
+DNS = {{ connection.dns_servers[0] }},{{ connection.dns_servers[1] }}
+
+[Peer]
+PublicKey = {{ connection.server_key }}
+Endpoint = {{ connection.server_ip }}:1337
+AllowedIPs = 0.0.0.0/0
+PersistentKeepalive = 25

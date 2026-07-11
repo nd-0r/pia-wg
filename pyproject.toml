@@ -1,0 +1,12 @@
+[project]
+name = "pia-wg"
+version = "0.1.0"
+description = "pia-wg is a Python-based WireGuard configuration utility for Private Internet Access. "
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "jinja2>=3.1.6",
+    "requests>=2.34.2",
+    "requests-toolbelt>=1.0.0",
+    "urllib3>=2.7.0",
+]
