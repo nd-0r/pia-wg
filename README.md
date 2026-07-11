@@ -4,8 +4,6 @@ This project was forked from https://github.com/djtroyal/pia-wg, which was forke
 
 pia-wg is a Python-based WireGuard configuration utility for Private Internet Access. 
 
-This fork has been modified from the original to facilitate automating config generation by using fixed PIA user credentials and region as to not require user interaction. It also outputs a fixed config filename for ease of referencing (and not accumulating an archive of stale config files). This is especially useful as your PIA WireGuard configuration can be refreshed and updated automatically with one command. This fork uses the lastest version of the PIA serverlist ("v6" as of 20221202); version "v4" used in the upstream was seeming to cause authentication issues (I assume somewhere in the token generation).
-
 This fork has been modified in the following ways from djtroyal's:
 
 - Uses the v2 auth endpoint POST form at `www.privateinternetaccess.com`, as recommended [here](https://github.com/pia-foss/manual-connections/tree/master).
