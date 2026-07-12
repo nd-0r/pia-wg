@@ -1,0 +1,12 @@
+[NetDev]
+Name=wg0
+Kind=wireguard
+
+[WireGuard]
+PrivateKey={{ privatekey }}
+
+[WireGuardPeer]
+PublicKey={{ connection.server_key }}
+Endpoint={{ connection.server_ip }}:1337
+AllowedIPs=0.0.0.0/0
+PersistentKeepalive=25

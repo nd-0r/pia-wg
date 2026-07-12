@@ -10,3 +10,19 @@ dependencies = [
     "requests-toolbelt>=1.0.0",
     "urllib3>=2.7.0",
 ]
+
+[project.scripts]
+piawg = "piawg.cli:main"
+
+[dependency-groups]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["piawg"]
+
+[tools.hatch.build]
+include = ["piawg/templates/**/*.j2"]

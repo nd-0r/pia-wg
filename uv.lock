@@ -100,7 +100,7 @@ wheels = [
 [[package]]
 name = "pia-wg"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "jinja2" },
     { name = "requests" },
@@ -115,6 +115,9 @@ requires-dist = [
     { name = "requests-toolbelt", specifier = ">=1.0.0" },
     { name = "urllib3", specifier = ">=2.7.0" },
 ]
+
+[package.metadata.requires-dev]
+dev = []
 
 [[package]]
 name = "requests"

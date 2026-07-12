@@ -1,0 +1,6 @@
+[Match]
+Name=wg0
+
+[Network]
+Address = {{ connection.peer_ip }}
+DNS = {{ connection.dns_servers[0] }},{{ connection.dns_servers[1] }}
